@@ -9,7 +9,7 @@ https://mobx-state-tree.js.org/intro/getting-started mobxtree 暂时不用看
 #环境搭建
 需要先安装ios、Android开发环境
 ios：
-安装xcode11，不要装最新版，不要在appstore安装
+安装xcode10，不要装最新版，不要在appstore安装
 Android：
 安装Android studio
 
