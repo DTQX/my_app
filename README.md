@@ -1,3 +1,27 @@
+#学习资料
+https://zh-hans.reactjs.org/docs/error-boundaries.html  react  看完新手引导就可以
+https://zh-hans.reactjs.org/docs/hooks-reference.html react hook  看完新手引导就可以
+https://reactnative.cn/docs/animations rn 看完新手引导就可以
+https://reactnavigation.org/docs/getting-started rn navigation  看完新手引导就可以
+https://github.com/infinitered/ignite-bowser  rn+navigation+ts+mobxtree 关注rn、navigation、ts就行，
+https://mobx-state-tree.js.org/intro/getting-started mobxtree 暂时不用看
+
+#环境搭建
+需要先安装ios、Android开发环境
+ios：
+安装xcode11，不要装最新版，不要在appstore安装
+Android：
+安装Android studio
+
+项目快手上手
+yarn install
+cd ios 
+pod install
+yarn ios
+
+
+
+
 # MyApp
 
 [![CircleCI](https://circleci.com/gh/infinitered/ignite-bowser.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-bowser)
