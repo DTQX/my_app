@@ -8,7 +8,8 @@ import React from "react"
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import { createNativeStackNavigator } from "react-native-screens/native-stack"
-import { WelcomeScreen, DemoScreen } from "../screens"
+import { WelcomeScreen, DemoScreen,HomeScreen } from "../screens"
+import { translate } from "../i18n";
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -23,8 +24,9 @@ import { WelcomeScreen, DemoScreen } from "../screens"
  *   https://reactnavigation.org/docs/typescript#type-checking-the-navigator
  */
 export type PrimaryParamList = {
-  welcome: undefined
-  demo: undefined
+  home: undefined,
+  msg: undefined,
+  my: undefined,
 }
 
 // Documentation: https://github.com/software-mansion/react-native-screens/tree/master/native-stack
@@ -38,10 +40,9 @@ export function PrimaryNavigator() {
         // gestureEnabled: true,
       }}
     >
-      <Tab.Screen name="welcome" component={WelcomeScreen} />
-      <Tab.Screen name="demo" component={DemoScreen} />
-      {/* <Tab.Screen name="demo" component={DemoScreen} />
-      <Tab.Screen name="demo" component={DemoScreen} /> */}
+      <Tab.Screen name="home" component={HomeScreen} options={{title:translate('tabName.home')}}/>
+      <Tab.Screen name="msg" component={DemoScreen} options={{title:translate('tabName.msg')}}/>
+      <Tab.Screen name="my" component={WelcomeScreen}  options={{title:translate('tabName.my')}}/>
     </Tab.Navigator>
   )
 }

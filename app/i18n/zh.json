@@ -11,5 +11,10 @@
     "reactotron": "中文",
     "androidReactotronHint": "If this doesn't work, ensure the Reactotron desktop app is running, run adb reverse tcp:9090 tcp:9090 from your terminal, and reload the app.",
     "iosReactotronHint": "If this doesn't work, ensure the Reactotron desktop app is running and reload app."
+  },
+  "tabName":{
+    "home":"首页",
+    "msg":"消息",
+    "my":"我的"
   }
 }

@@ -2,10 +2,10 @@
 import i18n from "i18n-js"
 
 const en = require("./en")
-const cn = require("./cn")
+const zh = require("./zh")
 
 i18n.fallbacks = true
-i18n.translations = { en, cn }
+i18n.translations = { en, zh }
 
 
 // const fallback = { languageTag: "en", isRTL: false }
@@ -14,4 +14,4 @@ i18n.translations = { en, cn }
 //   RNLocalize.findBestAvailableLanguage(Object.keys(i18n.translations)) || fallback
 // i18n.locale = languageTag;
 // 测试
-i18n.locale = "cn"
+i18n.locale = "zh"
