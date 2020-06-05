@@ -6,7 +6,8 @@
  */
 import React from "react"
 
-import { createNativeStackNavigator } from "react-native-screens/native-stack"
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { createNativeStackNavigator } from "react-native-screens/native-stack"
 import { WelcomeScreen, DemoScreen } from "../screens"
 
 /**
@@ -27,19 +28,21 @@ export type PrimaryParamList = {
 }
 
 // Documentation: https://github.com/software-mansion/react-native-screens/tree/master/native-stack
-const Stack = createNativeStackNavigator<PrimaryParamList>()
+const Tab = createBottomTabNavigator<PrimaryParamList>()
 
 export function PrimaryNavigator() {
   return (
-    <Stack.Navigator
+    <Tab.Navigator
       screenOptions={{
-        headerShown: false,
-        gestureEnabled: true,
+        // headerShown: false,
+        // gestureEnabled: true,
       }}
     >
-      <Stack.Screen name="welcome" component={WelcomeScreen} />
-      <Stack.Screen name="demo" component={DemoScreen} />
-    </Stack.Navigator>
+      <Tab.Screen name="welcome" component={WelcomeScreen} />
+      <Tab.Screen name="demo" component={DemoScreen} />
+      {/* <Tab.Screen name="demo" component={DemoScreen} />
+      <Tab.Screen name="demo" component={DemoScreen} /> */}
+    </Tab.Navigator>
   )
 }
 
