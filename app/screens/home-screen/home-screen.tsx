@@ -1,6 +1,6 @@
 import React, { FunctionComponent as Component } from "react"
 import { observer } from "mobx-react-lite"
-import { Screen, Text, Wallpaper, RoomCard } from "../../components"
+import { Screen, Text, Wallpaper, InfoBox, RoomCard } from "../../components"
 // import { useNavigation } from "@react-navigation/native"
 // import { useStores } from "../models"
 import { homeScreenStyles } from "./home-screen.style";
@@ -17,7 +17,8 @@ export const HomeScreen: Component = observer(function HomeScreen() {
   // Pull in navigation via hook
   // const navigation = useNavigation()
   return (
-    <Screen style={ homeScreenStyles.root } preset="scroll" statusBar="dark-content" backgroundColor={color.screenBackground}>
+    <Screen style={ homeScreenStyles.wrapper } preset="scroll" statusBar="dark-content" backgroundColor={color.screenBackground}>
+      <InfoBox></InfoBox>
       <RoomCard></RoomCard>
     </Screen>
   )

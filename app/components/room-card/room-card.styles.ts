@@ -1,9 +1,6 @@
 import { StyleSheet } from "react-native"
 
 export const roomCardStyles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: 'rgb(0,0,0)',
-  },
   card:{
     width:200,
     height:200,
